@@ -1,4 +1,4 @@
-var bg, tree, cloud, digdac, digdac2, fireB, fireBD;
+var bg, tree, cloud, digdac;
 
 function setup()
 {
