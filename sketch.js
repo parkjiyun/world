@@ -24,6 +24,6 @@ function draw()
   image(cloud,0,0,800,500);
   image(digdac,0,0,180,20);
   image(mario, mouseX, mouseY, 44,53);
-  image(fireB, 0,0,490,560);
+  image(fireB, 250,300,49,56);
 
 }
