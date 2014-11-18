@@ -1,4 +1,4 @@
-var img;  
+var bg, tree;
 
 function setup()
 {
