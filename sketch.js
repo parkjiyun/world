@@ -1,4 +1,4 @@
-var bg, tree, cloud, digdac;
+var bg, tree, cloud, digdac, digdac2, fireB, fireBD;
 
 function setup()
 {
@@ -15,7 +15,7 @@ function setup()
 function draw()
 {
   background(bg);
-  tree(tree, 600, 260);
-  cloud(cloud,200, 150);
-  digdac(digdac,180,20);
+  tree(img, 600, 260);
+  cloud(img,200, 150);
+  digdac(img,180,20);
 }
