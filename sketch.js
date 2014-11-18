@@ -31,7 +31,7 @@ function draw()
   image(mario, mouseX, mouseY, 44,53);
   image(fireB, 250,300,49,56);
   image(grassB, 0,0,800,500);
-  image(iceB,0,0,800,500);
+  image(iceB,700,500,46,53);
   image(mushroom,0,0,800,500);
   image(waterB,0,0,800,500);
 }
