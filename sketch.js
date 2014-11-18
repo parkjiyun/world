@@ -1,6 +1,5 @@
 var bg, tree, cloud, digdac,digdac2, fireB, fireBD;
 
-
 function setup()
 {
     createCanvas(800,500);
@@ -27,11 +26,4 @@ function draw()
   image(mario, mouseX, mouseY, 44,53);
   image(fireB, 250,300,49,56);
 
-
-    if {
-        cloud(timing * 1000,                         // x좌표
-        240 + Math.sin(timing*2*PI)*80, // y좌표
-        10,                                  // width
-        10);   
-}
 }
