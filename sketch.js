@@ -16,6 +16,6 @@ function draw()
 {
   background(bg);
   image(img1, 600, 260);
-  image(img,200, 150);
-  image(img,180,20);
+  image(img2,200, 150);
+  image(img3,180,20);
 }
