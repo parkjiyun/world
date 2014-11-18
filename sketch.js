@@ -1,10 +1,15 @@
-var bg, tree;
+var bg, tree, cloud, digdac, digdac2, fireB, fireBD;
 
 function setup()
 {
-    createCanvas(8000,5000);
+    createCanvas(800,500);
     bg = loadImage("bg.png")
-    tree = loadImage("tree.png");  // Load the image     
+    tree = loadImage("tree.png");
+    cloud = loadImage("cloud.png");
+    digdac = loadImage("digdac.png");
+    digdac2 = loadImage("dicdac2.png"); 
+    fireB = loadImage("fireB.png");
+    fireBD = loadImage("fireBD.png");
     noFill();
     noStroke();
 }
@@ -12,6 +17,10 @@ function setup()
 function draw()
 {
   background(bg);
-  tree(img, 60, 20);
+  tree(tree, 600, 200);
+  cloud(cloud,200, 150 );
+  digdac(digdac,180,20);
+  
+
 
 }
