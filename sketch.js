@@ -4,20 +4,21 @@ function setup()
 {
     createCanvas(800,500);
     bg = loadImage("bg.png");
+    iceC = loadImage("iceC.png");
+    waterC = loadImage("waterC.png");
+    grassC = loadImage("grassC.png");
+    fireC = loadImage("fireC.png");
     tree = loadImage("tree.png");
     cloud = loadImage("cloud.png");
     digdac = loadImage("digdac.png");
     mario = loadImage("mario.png");
     fireB = loadImage("fireB.png");
-    fireC = loadImage("fireC.png");
     grassB = loadImage("grassB.png");
-    grassC = loadImage("grassC.png");
     iceB = loadImage("iceB.png");
     mushroom = loadImage("mushroom.png");
     mushroom2 = loadImage("mushroom2.png")
-    waterC = loadImage("waterC.png")
     waterB = loadImage("waterB.png");
-    iceC = loadImage("iceC.png")
+
 
 
 
