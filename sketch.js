@@ -47,8 +47,8 @@ function draw()
   image(mushroom,270,200,42,43);
   image(mushroom2,0,0,800,500);
   image(waterB,0,0,800,500);
-  image(fire1,260,160,55,86);
-  image(fire2,250,160,26,37);
-  image(fire3,220,160,37,61);
-  image(fire4,200,160,23,40);
+  image(fire1,260,240,55,86);
+  image(fire2,250,240,26,37);
+  image(fire3,220,240,37,61);
+  image(fire4,200,240,23,40);
 }
