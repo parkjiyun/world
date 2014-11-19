@@ -1,4 +1,4 @@
-var bg, tree, cloud, digdac,digdac2, fireB, grassB, iceB, mushroom, wa;
+var bg, iceC,waterC,grassC,fireC,tree,cloud,digdac,mario,fireB, grassB, iceB,mushroom,mushroom2,waterB,fire1,fire2,fire3,fire4;
 
 function setup()
 {
