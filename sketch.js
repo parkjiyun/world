@@ -4,6 +4,7 @@ function setup()
 {
     createCanvas(800,500);
     bg = loadImage("bg.png");
+    digdac = loadImage("digdac.png");
     cloud = loadImage("cloud.png");
     fire1 = loadImage("fire1.png");
     fire2 = loadImage("fire2.png");
@@ -14,7 +15,6 @@ function setup()
     grassC = loadImage("grassC.png");
     fireC = loadImage("fireC.png");
     tree = loadImage("tree.png");
-    digdac = loadImage("digdac.png");
     mario = loadImage("mario.png");
     fireB = loadImage("fireB.png");
     grassB = loadImage("grassB.png");
@@ -33,6 +33,7 @@ function draw()
 {
   background(bg);
 
+  image(digdac,280,50,89,86);
   image(cloud,0,0,800,500);
   image(fire1,260,240,55,86);
   image(fire2,250,240,26,37);
@@ -43,7 +44,6 @@ function draw()
   image(fireC, 0,0,800,500);
   image(grassC, 0,0,800,500);
   image(tree,600,200,105,80);
-  image(digdac,280,50,89,86);
   image(mario, mouseX, mouseY, 44,53);
   image(fireB, 250,300,49,56);
   image(grassB, 0,0,800,500);
