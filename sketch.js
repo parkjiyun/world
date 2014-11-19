@@ -24,7 +24,7 @@ function draw()
 {
   background(bg);
 
-  image(tree,600,220,105,80);
+  image(tree,600,200,105,80);
   image(cloud,0,0,800,500);
   image(digdac,300,20,89,86);
   image(mario, mouseX, mouseY, 44,53);
