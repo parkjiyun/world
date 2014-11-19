@@ -33,8 +33,12 @@ function draw()
   image(digdac,310,50,89,86);
   image(mario, mouseX, mouseY, 44,53);
   image(fireB, 250,300,49,56);
+  image(fireC, 0,0,800,500);
   image(grassB, 0,0,800,500);
+  image(grassC, 0,0,800,500);
   image(iceB,700,50,46,53);
   image(mushroom,270,200,42,43);
+  image(mushroom2,0,0,800,500);
+  image(waterC,0,0,800,500);
   image(waterB,0,0,800,500);
 }
