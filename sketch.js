@@ -9,9 +9,13 @@ function setup()
     digdac = loadImage("digdac.png");
     mario = loadImage("mario.png");
     fireB = loadImage("fireB.png");
+    fireC = loadImage("fireC.png");
     grassB = loadImage("grassB.png");
+    grassC = loadImage("grassC.png");
     iceB = loadImage("iceB.png");
     mushroom = loadImage("mushroom.png");
+    mushroom2 = loadImage("mushroom2.png")
+    waterC = loadImage("waterC.png")
     waterB = loadImage("waterB.png");
 
 
