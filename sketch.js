@@ -5,6 +5,10 @@ function setup()
     createCanvas(800,500);
     bg = loadImage("bg.png");
     cloud = loadImage("cloud.png");
+    fire1 = loadImage("fire1.png");
+    fire2 = loadImage("fire2.png");
+    fire3 = loadImage("fire3.png");
+    fire4 = loadImage("fire4.png");
     iceC = loadImage("iceC.png");
     waterC = loadImage("waterC.png");
     grassC = loadImage("grassC.png");
@@ -18,10 +22,7 @@ function setup()
     mushroom = loadImage("mushroom.png");
     mushroom2 = loadImage("mushroom2.png");
     waterB = loadImage("waterB.png");
-    fire1 = loadImage("fire1.png");
-    fire2 = loadImage("fire2.png");
-    fire3 = loadImage("fire3.png");
-    fire4 = loadImage("fire4.png");
+
 
 
     noFill();
@@ -46,8 +47,8 @@ function draw()
   image(mushroom,270,200,42,43);
   image(mushroom2,0,0,800,500);
   image(waterB,0,0,800,500);
-  image(fire1,260,260,55,86);
-  image(fire2,250,260,26,37);
-  image(fire3,220,260,37,61);
-  image(fire4,200,260,23,40);
+  image(fire1,260,160,55,86);
+  image(fire2,250,160,26,37);
+  image(fire3,220,160,37,61);
+  image(fire4,200,160,23,40);
 }
