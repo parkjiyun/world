@@ -32,6 +32,8 @@ function setup()
 function draw()
 {
   background(bg);
+  var t1 = (new Date()%3000)/3000;
+  var t2 = (new Date()%2000)/2000;
 
   image(digdac,280,50,89,86);
   image(cloud,0,0,800,500);
@@ -48,8 +50,11 @@ function draw()
   image(fireB, 250,300,49,56);
   image(grassB, 0,0,800,500);
   image(iceB,700,50,46,53);
-  image(mushroom,270,200,42,43);
-  image(mushroom2,0,0,800,500);
+  // image(mushroom,270,200,42,43);
+  // image(mushroom2,0,0,800,500);
+  image(mushroom,430+sin(t1*2*PI)*200,200,42,43);
+  image(mushroom2,430+cos(t2*2*PI)*200,0,800,500);
+  
   image(waterB,0,0,800,500);
 
 }
