@@ -1,4 +1,6 @@
 var bg, iceC,waterC,grassC,fireC,tree,cloud,digdac,mario,fireB, grassB, iceB,mushroom,mushroom2,waterB,fire1,fire2,fire3,fire4;
+var fireBTouched = false;
+
 
 function setup()
 {
@@ -42,6 +44,16 @@ function draw()
   }else{
     image(digdac2,280,50,89,86);
   } 
+
+      if (!fireBTouched){
+        fireB(timing * 1000,                         // x좌표
+        240 + Math.sin(timing*2*PI)*80, // y좌표
+        100,                                  // width
+        100);   
+    } else {
+        girlDead(girlTouchedX, girlTouchedY);
+    }
+
   image(cloud,0,0,800,500);
   image(fire1,260,240,55,86);
   image(fire2,250,240,26,37);
