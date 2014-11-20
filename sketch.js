@@ -40,6 +40,7 @@ function draw()
   var t1 = (new Date()%6000)/6000;
   var t2 = (new Date()%8000)/8000;
  var tDig = (new Date()%1000)/1000;
+  var timing = (new Date()%1000)/1000;
 
   if(tDig <0.5){
     image(digdac,280,50,89,86);
