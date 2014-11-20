@@ -5,6 +5,7 @@ function setup()
     createCanvas(800,500);
     bg = loadImage("bg.png");
     digdac = loadImage("digdac.png");
+    dicdac2 = loadImage("dicdac2.png")
     cloud = loadImage("cloud.png");
     fire1 = loadImage("fire1.png");
     fire2 = loadImage("fire2.png");
@@ -34,8 +35,14 @@ function draw()
   background(bg);
   var t1 = (new Date()%6000)/6000;
   var t2 = (new Date()%8000)/8000;
+ var tDig = (new Date()%1000)/1000;
 
+if(tDig <0.5){
   image(digdac,280,50,89,86);
+}else{
+    image(digdac2,280,50,89,86);
+
+}
   image(cloud,0,0,800,500);
   image(fire1,260,240,55,86);
   image(fire2,250,240,26,37);
