@@ -57,7 +57,7 @@ function draw()
 
 
     if (fireBTouched === false) {
-        if (mouseX > 300 && mouseX < 600 && mouseY > 240 + sin(timing*2*PI)*80 && mouseY < 650)   // 부딪혔을 때 
+        if (dist(mouseX,mouseY,300,240+sin(timing*2*PI)*40)<50)   // 부딪혔을 때 
         {
             fireBTouched = true; 
             fireBTouchedX = mouseX;
@@ -86,4 +86,8 @@ function draw()
   
   image(waterB,0,0,800,500);
 
+}
+
+function dist(x1,y1,x2,y2){
+  return sqrt(pow(x1-x2,2)+pow(y1-y2,2));
 }
