@@ -49,8 +49,7 @@ function draw()
   } 
 
     if (!fireBTouched){
-        image(fireB,timing * 1000,                         // x좌표
-        240 + sin(timing*2*PI)*80, // y좌표
+        image(fireB,300 + sin(timing*2*PI)*40, // y좌표
         100,                                  // width
         100);   
     } else {
