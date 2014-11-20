@@ -32,8 +32,8 @@ function setup()
 function draw()
 {
   background(bg);
-  var t1 = (new Date()%300)/300;
-  var t2 = (new Date()%200)/200;
+  var t1 = (new Date()%6000)/6000;
+  var t2 = (new Date()%8000)/8000;
 
   image(digdac,280,50,89,86);
   image(cloud,0,0,800,500);
@@ -53,7 +53,7 @@ function draw()
   // image(mushroom,270,200,42,43);
   // image(mushroom2,0,0,800,500);
   image(mushroom,430+sin(t1*2*PI)*200,200,42,43);
-  image(mushroom,430+cos(t2*2*PI)*200,0,50,50);
+  image(mushroom,430+cos(t2*2*PI)*200,250,50,50);
   
   image(waterB,0,0,800,500);
 
