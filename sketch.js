@@ -51,7 +51,7 @@ function draw()
         100,                                  // width
         100);   
     } else {
-        girlDead(girlTouchedX, girlTouchedY);
+        
     }
 
   image(cloud,0,0,800,500);
