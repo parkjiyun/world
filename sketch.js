@@ -1,5 +1,7 @@
 var bg, iceC,waterC,grassC,fireC,tree,cloud,digdac,mario,fireB, grassB, iceB,mushroom,mushroom2,waterB,fire1,fire2,fire3,fire4;
 var fireBTouched = false;
+var fireBTouchedX = 0;
+var fireBTouchedY = 0;
 
 
 function setup()
@@ -45,13 +47,14 @@ function draw()
     image(digdac2,280,50,89,86);
   } 
 
-      if (!fireBTouched){
-        fireB(timing * 1000,                         // x좌표
-        240 + Math.sin(timing*2*PI)*80, // y좌표
-        100,                                  // width
-        100);   
-    } else {
-        
+
+    if (fireBTouched === false) {
+        if (mouseX > timing * 1000 && mouseX < timing * 1300 && mouseY > 240 + Math.sin(timing*2*PI)*80 && mouseY < 650)   // 부딪혔을 때 
+        {
+            fireBTouched = true; 
+            fireBTouchedX = mouseX;
+            fireBTouchedY = mouseY;
+        } 
     }
 
   image(cloud,0,0,800,500);
