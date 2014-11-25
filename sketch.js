@@ -61,9 +61,9 @@ function draw()
 
 //fireB
     if (!fireBTouched){
-        image(fireB,300 , 240+sin(timing*2*PI)*40, // y좌표
-        100,                                  // width
-        100);   
+        image(fireB,500 + Math.cos(timing1*2*PI)*300-150 , 500 + Math.sin(timing1*2*PI)*300-150, // y좌표
+        250,                                  // width
+        300);   
     } else {
     }
 
@@ -86,8 +86,6 @@ function draw()
   image(iceC,0,0,800,500);
   image(fireC, 0,0,800,500);
   image(grassC, 0,0,800,500);
-  image(fireB, 250,300,49,56);
-  image(fireB,500 + Math.cos(timing1*2*PI)*300-150,500 + Math.sin(timing1*2*PI)*300-150,300,300);
   image(grassB, 0,0,800,500);
   image(iceB,700,50,46,53);
   // image(mushroom,270,200,42,43);
