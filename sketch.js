@@ -15,6 +15,8 @@ var waterBTouched = false;
 var waterBTouchedX = 0;
 var waterBTouchedY = 0;
 
+var song;
+
 
 
 
