@@ -42,6 +42,7 @@ function setup()
     mushroom = loadImage("mushroom.png");
     mushroom2 = loadImage("mushroom2.png");
     waterB = loadImage("waterB.png");
+    wave = loadImage("wave.png");
     flag = loadImage("flag.png");
     mario = loadImage("mario.png");
 
@@ -64,6 +65,8 @@ function draw()
 
   image(mushroom,430+sin(t1*2*PI)*50,230,30,31);
   image(mushroom,280+cos(t2*2*PI)*50,250,30,31);
+
+  image(wave,550+sin(t1*2*PI)*50,550,290,143);
 
   //dicdac
   if(tDig <0.5){
