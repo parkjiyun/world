@@ -94,7 +94,7 @@ function draw()
   image(fire3,220,240,37,61);
   image(fire4,200,240,23,40);
   image(waterC,0,0,800,500);
-  image(iceC,0,0,780,500);
+  image(iceC,0,0,780,490);
   image(fireC, 0,0,780,500);
   image(grassC, 0,0,800,500);
   //image(grassB, 0,0,800,500);
@@ -107,15 +107,15 @@ function draw()
 
 //grassB
     if (!grassBTouched){
-        image(grassB,800 + Math.cos(timing1*2*PI)*30-10 , 500 + Math.sin(timing1*2*PI)*30-10, // y좌표
-        800,                                  // width
-        500);   
+        image(grassB,600 + Math.cos(timing1*2*PI)*30-10 , 300 + Math.sin(timing1*2*PI)*30-10, // y좌표
+        42,                                  // width
+        43);   
     } else { 
     }
 
 
     if (grassBTouched === false) {
-        if (dist(mouseX,mouseY,800 , 500+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
+        if (dist(mouseX,mouseY,600 , 300+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
         {
             grassBTouched = true; 
             grassBTouchedX = mouseX;
