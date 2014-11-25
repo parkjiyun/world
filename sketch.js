@@ -69,7 +69,6 @@ function draw()
   image(iceC,0,0,800,500);
   image(fireC, 0,0,800,500);
   image(grassC, 0,0,800,500);
-  image(grassB, 0,0,800,500);
   image(iceB,700,50,46,53);
   // image(mushroom,270,200,42,43);
   // image(mushroom2,0,0,800,500);
@@ -79,9 +78,66 @@ function draw()
   image(waterB,0,0,800,500);
 
 
+//waterB
+    if (!waterBTouched){
+        image(waterB,180 + Math.cos(timing1*2*PI)*30-10 , 320 + Math.sin(timing1*2*PI)*30-10, // y좌표
+        49,                                  // width
+        56);   
+    } else {
+    }
+
+
+    if (fireBTouched === false) {
+        if (dist(mouseX,mouseY,280 ,320+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
+        {
+            fireBTouched = true; 
+            fireBTouchedX = mouseX;
+            fireBTouchedY = mouseY;
+        } 
+    }
+
+
+//iceB
+    if (!iceBTouched){
+        image(fireB,180 + Math.cos(timing1*2*PI)*30-10 , 320 + Math.sin(timing1*2*PI)*30-10, // y좌표
+        49,                                  // width
+        56);   
+    } else {
+    }
+
+
+    if (iceBTouched === false) {
+        if (dist(mouseX,mouseY,280 ,320+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
+        {
+            fireBTouched = true; 
+            fireBTouchedX = mouseX;
+            fireBTouchedY = mouseY;
+        } 
+    }
+
+
+//grassB
+    if (!grassBTouched){
+        image(fireB,600 + Math.cos(timing1*2*PI)*30-10 , 250 + Math.sin(timing1*2*PI)*30-10, // y좌표
+        49,                                  // width
+        56);   
+    } else {
+    }
+
+
+    if (grassBTouched === false) {
+        if (dist(mouseX,mouseY,280 ,320+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
+        {
+            fireBTouched = true; 
+            fireBTouchedX = mouseX;
+            fireBTouchedY = mouseY;
+        } 
+    }
+
+
 //fireB
     if (!fireBTouched){
-        image(fireB,220 + Math.cos(timing1*2*PI)*30-10 , 320 + Math.sin(timing1*2*PI)*30-10, // y좌표
+        image(fireB,180 + Math.cos(timing1*2*PI)*30-10 , 320 + Math.sin(timing1*2*PI)*30-10, // y좌표
         49,                                  // width
         56);   
     } else {
