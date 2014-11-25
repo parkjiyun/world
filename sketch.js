@@ -107,7 +107,7 @@ function draw()
 
 //grassB
     if (!grassBTouched){
-        image(grassB,650 + Math.cos(timing1*2*PI)*30-10 , 80 + Math.sin(timing1*2*PI)*30-10, // y좌표
+        image(grassB,800 + Math.cos(timing1*2*PI)*30-10 , 500 + Math.sin(timing1*2*PI)*30-10, // y좌표
         800,                                  // width
         500);   
     } else { 
@@ -115,7 +115,7 @@ function draw()
 
 
     if (grassBTouched === false) {
-        if (dist(mouseX,mouseY,650 , 80+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
+        if (dist(mouseX,mouseY,800 , 500+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
         {
             grassBTouched = true; 
             grassBTouchedX = mouseX;
