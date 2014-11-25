@@ -61,9 +61,9 @@ function draw()
 
 //fireB
     if (!fireBTouched){
-        image(fireB,500 + Math.cos(timing1*2*PI)*300-150 , 500 + Math.sin(timing1*2*PI)*300-150, // y좌표
-        250,                                  // width
-        300);   
+        image(fireB,250 + Math.cos(timing1*2*PI)*300-150 , 300 + Math.sin(timing1*2*PI)*300-150, // y좌표
+        49,                                  // width
+        56);   
     } else {
     }
 
