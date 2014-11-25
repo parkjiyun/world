@@ -133,7 +133,7 @@ function draw()
     }
 
 
-  image(cloud,10+sin(t1*1)*500,10,800,500);
+  image(cloud,10+sin(t1*1)*3,10,800,500);
   image(mario, mouseX, mouseY, 44,53);
 
 
