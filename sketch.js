@@ -94,7 +94,7 @@ function draw()
         image(iceB,650 + Math.cos(timing1*2*PI)*30-10 , 80 + Math.sin(timing1*2*PI)*30-10, // y좌표
         46,                                  // width
         53);   
-    } else { flag(flagTouchedX, flagTouchedY);
+    } else { flag(iceBTouchedX, iceBTouchedY);
     }
 
 
