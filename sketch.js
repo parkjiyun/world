@@ -11,7 +11,7 @@ var iceBTouchedY = 0;
 
 function setup()
 {
-    createCanvas(900,600);
+    createCanvas(1000,600);
     bg = loadImage("bg.png");
     digdac = loadImage("digdac.png");
     digdac2 = loadImage("dicdac2.png");
@@ -76,7 +76,7 @@ function draw()
     image(tree2,600,200,105,80);
   } 
 
-  image(cloud,430+sin(t1*1)*50,230,800,500);
+  image(cloud,10+sin(t1*1)*1000,10,800,500);
 
   image(fire1,260,240,55,86);
   image(fire2,250,240,26,37);
