@@ -78,9 +78,9 @@ function draw()
 
 //tree2
     if(ttree <0.5){
-    image(tree,800,400,85,60);
+    image(tree,770,400,85,60);
   }else{
-    image(tree2,800,400,85,60);
+    image(tree2,770,400,85,60);
   } 
 
 
