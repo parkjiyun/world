@@ -45,6 +45,7 @@ function draw()
   background(bg);
   var t1 = (new Date()%6000)/6000;
   var t2 = (new Date()%8000)/8000;
+  var t3 = (new Date()%1000)/1000;
   var tDig = (new Date()%1000)/1000;
   var timing = (new Date()%1000)/1000;
   var ttree = (new Date()%1000)/1000;
@@ -133,7 +134,7 @@ function draw()
     }
 
 
-  image(cloud,10+sin(t1*1)*1000,10,1100,600);
+  image(cloud,10+sin(t3*1)*1000,10,1100,600);
   image(mario, mouseX, mouseY, 44,53);
 
 
