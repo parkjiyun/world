@@ -71,7 +71,10 @@ function draw()
   image(mushroom,430+sin(t1*2*PI)*50,230,30,31);
   image(mushroom,280+cos(t2*2*PI)*50,250,30,31);
 
-  image(wave,400+cos(t2*2*PI)*50,550,155,77);
+  image(wave,400+cos(t2*10*PI)*50,500,100,22);
+  image(wave,150+cos(t2*2*PI)*50,500,100,22);
+  image(wave,400+cos(t2*2*PI)*50,500,100,22);
+  image(wave,400+cos(t2*2*PI)*50,500,100,22);
 
   image(devil,500+sin(t1*2*PI)*50,120,34,40);
   image(devil,250+sin(t1*2*PI)*50,170,34,40);
