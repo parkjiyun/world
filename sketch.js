@@ -20,14 +20,13 @@ function setup()
     grassC = loadImage("grassC.png");
     fireC = loadImage("fireC.png");
     tree = loadImage("tree.png");
-    mario = loadImage("mario.png");
     fireB = loadImage("fireB.png");
     grassB = loadImage("grassB.png");
     iceB = loadImage("iceB.png");
     mushroom = loadImage("mushroom.png");
     mushroom2 = loadImage("mushroom2.png");
     waterB = loadImage("waterB.png");
-
+    mario = loadImage("mario.png");
 
 
     noFill();
@@ -74,9 +73,15 @@ function draw()
   image(iceC,0,0,800,500);
   image(fireC, 0,0,800,500);
   image(grassC, 0,0,800,500);
-  image(tree,600,200,105,80);
-  image(mario, mouseX, mouseY, 44,53);
+    if(ttree <0.5){
+    image(tree,600,200,105,80);
+  }else{
+    image(tree2,600,200,105,80);
+  } 
+
   image(fireB, 250,300,49,56);
+  image(fireB,500 + Math.cos(timing1*2*PI)*300 + Math.cos(timing2*4*PI)*150-100,
+    500 + Math.sin(timing1*2*PI)*300 + Math.sin(timing2*4*PI)*70-100,200,200);
   image(grassB, 0,0,800,500);
   image(iceB,700,50,46,53);
   // image(mushroom,270,200,42,43);
@@ -85,6 +90,8 @@ function draw()
   image(mushroom,430+cos(t2*2*PI)*200,250,50,50);
   
   image(waterB,0,0,800,500);
+
+  image(mario, mouseX, mouseY, 44,53);
 
 }
 
