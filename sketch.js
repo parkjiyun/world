@@ -46,7 +46,6 @@ function draw()
   var t1 = (new Date()%6000)/6000;
   var t2 = (new Date()%8000)/8000;
   var tDig = (new Date()%1000)/1000;
-  var tfire = (new Date()%1000)/1000;
   var timing = (new Date()%1000)/1000;
   var ttree = (new Date()%1000)/1000;
   var duration1 = 6000;
@@ -78,16 +77,8 @@ function draw()
   } 
 
 
-//fire
-  if(tfire <0.5){
-    image(fire1,260,240,55,86);
-  }else{
-    image(fire3,260,240,55,86);
-  } 
-
-
-
   image(cloud,0,0,800,500);
+  image(fire1,260,240,55,86);
   image(fire2,250,240,26,37);
   image(fire3,220,240,37,61);
   image(fire4,200,240,23,40);
