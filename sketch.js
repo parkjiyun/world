@@ -9,7 +9,9 @@ function setup()
     createCanvas(800,500);
     bg = loadImage("bg.png");
     digdac = loadImage("digdac.png");
-    digdac2 = loadImage("dicdac2.png")
+    digdac2 = loadImage("dicdac2.png");
+    tree = loadImage("tree.png");
+    tree2 = loadImage("tree2.png");
     cloud = loadImage("cloud.png");
     fire1 = loadImage("fire1.png");
     fire2 = loadImage("fire2.png");
@@ -19,8 +21,6 @@ function setup()
     waterC = loadImage("waterC.png");
     grassC = loadImage("grassC.png");
     fireC = loadImage("fireC.png");
-    tree = loadImage("tree.png");
-    tree2 = loadImage("tree2.png");
     fireB = loadImage("fireB.png");
     grassB = loadImage("grassB.png");
     iceB = loadImage("iceB.png");
@@ -42,11 +42,21 @@ function draw()
   var tDig = (new Date()%1000)/1000;
   var timing = (new Date()%1000)/1000;
   var ttree = (new Date()%1000)/1000;
+  var duration1 = 6000;
+  var timing1 = (new Date()%duration1)/duration1;
+  var duration2 = 5000;
+  var timing2 = (new Date()%duration2)/duration2;
 
   if(tDig <0.5){
     image(digdac,280,50,89,86);
   }else{
     image(digdac2,280,50,89,86);
+  } 
+
+    if(ttree <0.5){
+    image(tree,600,200,105,80);
+  }else{
+    image(tree2,600,200,105,80);
   } 
 
     if (!fireBTouched){
@@ -75,12 +85,6 @@ function draw()
   image(iceC,0,0,800,500);
   image(fireC, 0,0,800,500);
   image(grassC, 0,0,800,500);
-    if(ttree <0.5){
-    image(tree,600,200,105,80);
-  }else{
-    image(tree2,600,200,105,80);
-  } 
-
   image(fireB, 250,300,49,56);
   image(fireB,500 + Math.cos(timing1*2*PI)*300 + Math.cos(timing2*4*PI)*150-100,
     500 + Math.sin(timing1*2*PI)*300 + Math.sin(timing2*4*PI)*70-100,200,200);
