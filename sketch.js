@@ -51,7 +51,11 @@ function draw()
   var duration1 = 6000;
   var timing1 = (new Date()%duration1)/duration1;
   
-//dicdac
+
+  image(mushroom,430+sin(t1*2*PI)*50,50,42,43);
+  image(mushroom,430+cos(t2*2*PI)*50,80,50,50);
+
+  //dicdac
   if(tDig <0.5){
     image(digdac,280,50,89,86);
   }else{
@@ -86,8 +90,7 @@ function draw()
   //image(iceB,700,50,46,53);
   // image(mushroom,270,200,42,43);
   // image(mushroom2,0,0,800,500);
-  image(mushroom,430+sin(t1*2*PI)*200,200,42,43);
-  image(mushroom,430+cos(t2*2*PI)*200,250,50,50);
+
   
   image(waterB,0,0,800,500);
 
