@@ -52,8 +52,8 @@ function draw()
   var timing1 = (new Date()%duration1)/duration1;
   
 
-  image(mushroom,430+sin(t1*2*PI)*50,50,42,43);
-  image(mushroom,430+cos(t2*2*PI)*50,80,50,50);
+  image(mushroom,430+sin(t1*2*PI)*50,230,42,43);
+  image(mushroom,430+cos(t2*2*PI)*50,250,50,50);
 
   //dicdac
   if(tDig <0.5){
