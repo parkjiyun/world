@@ -58,6 +58,13 @@ function draw()
     image(digdac2,280,50,89,86);
   } 
 
+  //dicdac2
+  if(tDig <0.5){
+    image(digdac,200,20,89,86);
+  }else{
+    image(digdac2,200,20,89,86);
+  } 
+
 //tree
     if(ttree <0.5){
     image(tree,600,200,105,80);
