@@ -32,6 +32,7 @@ function setup()
     mushroom = loadImage("mushroom.png");
     mushroom2 = loadImage("mushroom2.png");
     waterB = loadImage("waterB.png");
+    flag = loadImage("flag.png");
     mario = loadImage("mario.png");
 
 
@@ -75,6 +76,7 @@ function draw()
   image(fireC, 0,0,800,500);
   image(grassC, 0,0,800,500);
   image(grassB, 0,0,800,500);
+
   //image(iceB,700,50,46,53);
   // image(mushroom,270,200,42,43);
   // image(mushroom2,0,0,800,500);
@@ -89,7 +91,7 @@ function draw()
         image(iceB,650 + Math.cos(timing1*2*PI)*30-10 , 80 + Math.sin(timing1*2*PI)*30-10, // y좌표
         46,                                  // width
         53);   
-    } else {
+    } else { flag(flagTouchedX, flagTouchedY);
     }
 
 
