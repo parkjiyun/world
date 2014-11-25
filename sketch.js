@@ -7,6 +7,9 @@ var iceBTouched = false;
 var iceBTouchedX = 0;
 var iceBTouchedY = 0;
 
+var flagTouchedX = 0;
+var flagTouchedY = 0;
+
 
 
 function setup()
