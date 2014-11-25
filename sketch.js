@@ -76,8 +76,7 @@ function draw()
     image(tree2,600,200,105,80);
   } 
 
-
-  image(cloud,0,0,800,500);
+  image(cloud,430+sin(t1*2*PI)*50,230,800,500);
   image(fire1,260,240,55,86);
   image(fire2,250,240,26,37);
   image(fire3,220,240,37,61);
