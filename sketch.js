@@ -60,9 +60,9 @@ function draw()
 
   //dicdac2
   if(tDig <0.5){
-    image(digdac,200,150,89,86);
+    image(digdac,150,150,89,86);
   }else{
-    image(digdac2,200,150,89,86);
+    image(digdac2,150,150,89,86);
   } 
 
 //tree
