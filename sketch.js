@@ -110,15 +110,15 @@ function draw()
 
 //waterB
     if (!waterBTouched){
-        image(waterB,300 + Math.cos(timing1*2*PI)*30-10 , 130 + Math.sin(timing1*2*PI)*30-10, // y좌표
-        42,                                  // width
-        43);   
+        image(waterB,350 + Math.cos(timing1*2*PI)*30-10 , 150 + Math.sin(timing1*2*PI)*30-10, // y좌표
+        47,                                  // width
+        62);   
     } else { 
     }
 
 
     if (waterBTouched === false) {
-        if (dist(mouseX,mouseY,300 , 130+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
+        if (dist(mouseX,mouseY,350 , 150+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
         {
             waterBTouched = true; 
             waterBTouchedX = mouseX;
@@ -128,15 +128,15 @@ function draw()
 
 //grassB
     if (!grassBTouched){
-        image(grassB,600 + Math.cos(timing1*2*PI)*30-10 , 300 + Math.sin(timing1*2*PI)*30-10, // y좌표
-        42,                                  // width
-        43);   
+        image(grassB,600 + Math.cos(timing1*2*PI)*30-10 , 270 + Math.sin(timing1*2*PI)*30-10, // y좌표
+        48,                                  // width
+        71);   
     } else { 
     }
 
 
     if (grassBTouched === false) {
-        if (dist(mouseX,mouseY,600 , 300+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
+        if (dist(mouseX,mouseY,600 , 270+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
         {
             grassBTouched = true; 
             grassBTouchedX = mouseX;
