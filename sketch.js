@@ -3,6 +3,11 @@ var fireBTouched = false;
 var fireBTouchedX = 0;
 var fireBTouchedY = 0;
 
+var iceBTouched = false;
+var iceBTouchedX = 0;
+var iceBTouchedY = 0;
+
+
 
 function setup()
 {
