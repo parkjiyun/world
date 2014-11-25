@@ -21,6 +21,8 @@ var waterBTouchedY = 0;
 
 function setup()
 {
+
+    song = loadSound('music.mp3');
     createCanvas(1000,600);
     bg = loadImage("bg.png");
     digdac = loadImage("digdac.png");
@@ -45,6 +47,7 @@ function setup()
     wave = loadImage("wave.png");
     flag = loadImage("flag.png");
     mario = loadImage("mario.png");
+    devil = loadImage("devil.png")
 
 
     noFill();
@@ -66,7 +69,10 @@ function draw()
   image(mushroom,430+sin(t1*2*PI)*50,230,30,31);
   image(mushroom,280+cos(t2*2*PI)*50,250,30,31);
 
-  image(wave,550+sin(t1*2*PI)*50,550,190,43);
+  image(wave,280+cos(t2*2*PI)*50,250,30,31);
+
+  image(devil,500+sin(t1*2*PI)*50,120,34,40);
+  image(devil,500+sin(t1*2*PI)*50,120,34,40);
 
   //dicdac
   if(tDig <0.5){
