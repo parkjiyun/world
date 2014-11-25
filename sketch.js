@@ -44,21 +44,22 @@ function draw()
   var ttree = (new Date()%1000)/1000;
   var duration1 = 6000;
   var timing1 = (new Date()%duration1)/duration1;
-  var duration2 = 5000;
-  var timing2 = (new Date()%duration2)/duration2;
-
+  
+//dicdac
   if(tDig <0.5){
     image(digdac,280,50,89,86);
   }else{
     image(digdac2,280,50,89,86);
   } 
 
+//tree
     if(ttree <0.5){
     image(tree,600,200,105,80);
   }else{
     image(tree2,600,200,105,80);
   } 
 
+//fireB
     if (!fireBTouched){
         image(fireB,300 , 240+sin(timing*2*PI)*40, // y좌표
         100,                                  // width
@@ -86,8 +87,7 @@ function draw()
   image(fireC, 0,0,800,500);
   image(grassC, 0,0,800,500);
   image(fireB, 250,300,49,56);
-  image(fireB,500 + Math.cos(timing1*2*PI)*300 + Math.cos(timing2*4*PI)*150-100,
-    500 + Math.sin(timing1*2*PI)*300 + Math.sin(timing2*4*PI)*70-100,200,200);
+  image(fireB,500 + Math.cos(timing1*2*PI)*300-150,500 + Math.sin(timing1*2*PI)*300-150,300,300);
   image(grassB, 0,0,800,500);
   image(iceB,700,50,46,53);
   // image(mushroom,270,200,42,43);
