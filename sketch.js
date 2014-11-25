@@ -24,7 +24,6 @@ var song;
 function setup()
 {
 
-    song = loadSound("music.mp3");
 
     createCanvas(1000,600);
     bg = loadImage("bg.png");
