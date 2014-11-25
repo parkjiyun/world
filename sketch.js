@@ -66,7 +66,7 @@ function draw()
   image(mushroom,430+sin(t1*2*PI)*50,230,30,31);
   image(mushroom,280+cos(t2*2*PI)*50,250,30,31);
 
-  image(wave,550+sin(t1*2*PI)*50,550,290,143);
+  image(wave,550+sin(t1*2*PI)*50,550,190,43);
 
   //dicdac
   if(tDig <0.5){
