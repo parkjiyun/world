@@ -79,7 +79,7 @@ function draw()
   image(fireC, 0,0,800,500);
   image(grassC, 0,0,800,500);
   image(grassB, 0,0,800,500);
-
+  image(flag);
   //image(iceB,700,50,46,53);
   // image(mushroom,270,200,42,43);
   // image(mushroom2,0,0,800,500);
