@@ -74,7 +74,7 @@ function draw()
   image(wave,400+cos(t2*10*PI)*50,530,110,40);
   image(wave,150+cos(t2*5*PI)*50,500,110,40);
   image(wave,400+cos(t2*2*PI)*50,500,110,40);
-  image(wave,800+cos(t2*8*PI)*50,300,110,40);
+  image(wave,800+cos(t2*8*PI)*50,280,110,40);
 
   image(devil,500+sin(t1*2*PI)*50,120,34,40);
   image(devil,250+sin(t1*2*PI)*50,170,34,40);
