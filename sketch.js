@@ -89,7 +89,7 @@ function draw()
 
 
     if (fireBTouched === false) {
-        if (dist(mouseX,mouseY,280,320+sin(timing*2*PI)*20)<30)   // 부딪혔을 때 
+        if (dist(mouseX,mouseY,280+cos(timing*2*PI)*20)<30,320+sin(timing*2*PI)*20)<30)   // 부딪혔을 때 
         {
             fireBTouched = true; 
             fireBTouchedX = mouseX;
