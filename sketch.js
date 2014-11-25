@@ -45,7 +45,7 @@ function draw()
   background(bg);
   var t1 = (new Date()%6000)/6000;
   var t2 = (new Date()%8000)/8000;
-  var t3 = (new Date()%10000)/10000;
+  var t3 = (new Date()%50000)/10000;
   var tDig = (new Date()%1000)/1000;
   var timing = (new Date()%1000)/1000;
   var ttree = (new Date()%1000)/1000;
