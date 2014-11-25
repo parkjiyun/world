@@ -22,7 +22,8 @@ var waterBTouchedY = 0;
 function setup()
 {
 
-    song = loadSound('music.mp3');
+    song = loadSound("music.mp3");
+
     createCanvas(1000,600);
     bg = loadImage("bg.png");
     digdac = loadImage("digdac.png");
