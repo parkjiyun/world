@@ -83,8 +83,8 @@ function draw()
   image(fire3,220,240,37,61);
   image(fire4,200,240,23,40);
   image(waterC,0,0,800,500);
-  image(iceC,0,0,800,500);
-  image(fireC, 0,0,800,500);
+  image(iceC,0,0,600,500);
+  image(fireC, 0,0,600,500);
   image(grassC, 0,0,800,500);
   image(grassB, 0,0,800,500);
   //image(iceB,700,50,46,53);
