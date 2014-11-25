@@ -76,7 +76,7 @@ function draw()
     image(tree2,600,200,105,80);
   } 
 
-  image(cloud,10+sin(t1*1)*1000,10,800,500);
+
 
   image(fire1,260,240,55,86);
   image(fire2,250,240,26,37);
@@ -132,6 +132,8 @@ function draw()
         } 
     }
 
+
+  image(cloud,10+sin(t1*1)*500,10,800,500);
   image(mario, mouseX, mouseY, 44,53);
 
 
