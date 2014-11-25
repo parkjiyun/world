@@ -11,6 +11,11 @@ var grassBTouched = false;
 var grassBTouchedX = 0;
 var grassBTouchedY = 0;
 
+var waterBTouched = false;
+var waterBTouchedX = 0;
+var waterBTouchedY = 0;
+
+
 
 
 
@@ -101,9 +106,25 @@ function draw()
   //image(iceB,700,50,46,53);
   // image(mushroom,270,200,42,43);
   // image(mushroom2,0,0,800,500);
+  //image(waterB,0,0,800,500);
 
-  
-  image(waterB,0,0,800,500);
+//waterB
+    if (!waterBTouched){
+        image(waterB,300 + Math.cos(timing1*2*PI)*30-10 , 130 + Math.sin(timing1*2*PI)*30-10, // y좌표
+        42,                                  // width
+        43);   
+    } else { 
+    }
+
+
+    if (waterBTouched === false) {
+        if (dist(mouseX,mouseY,300 , 130+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
+        {
+            waterBTouched = true; 
+            waterBTouchedX = mouseX;
+            waterBTouchedY = mouseY;
+        } 
+    }    
 
 //grassB
     if (!grassBTouched){
