@@ -81,7 +81,7 @@ function draw()
 
 //fireB
     if (!fireBTouched){
-        image(fireB,280 + Math.cos(timing1*2*PI)*65-30 , 320 + Math.sin(timing1*2*PI)*65-30, // y좌표
+        image(fireB,280 + Math.cos(timing1*2*PI)*30-10 , 320 + Math.sin(timing1*2*PI)*30-10, // y좌표
         49,                                  // width
         56);   
     } else {
@@ -89,7 +89,7 @@ function draw()
 
 
     if (fireBTouched === false) {
-        if (dist(mouseX,mouseY,280,320+sin(timing*2*PI)*20)<30)   // 부딪혔을 때 
+        if (dist(mouseX,mouseY,280,320+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
         {
             fireBTouched = true; 
             fireBTouchedX = mouseX;
