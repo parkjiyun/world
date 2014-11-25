@@ -82,7 +82,7 @@ function draw()
   if(tfire <0.5){
     image(fire1,260,240,55,86);
   }else{
-    image(fire3,280,240,55,86);
+    image(fire3,260,240,55,86);
   } 
 
 
