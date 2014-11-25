@@ -93,12 +93,12 @@ function draw()
     }
 
 
-    if (fireBTouched === false) {
-        if (dist(mouseX,mouseY,280 ,320+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
+    if (iceBTouched === false) {
+        if (dist(mouseX,mouseY,650 , 80+sin(timing1*2*PI)*20)<30)   // 부딪혔을 때 
         {
-            fireBTouched = true; 
-            fireBTouchedX = mouseX;
-            fireBTouchedY = mouseY;
+            iceBTouched = true; 
+            iceBTouchedX = mouseX;
+            iceBTouchedY = mouseY;
         } 
     }
 
