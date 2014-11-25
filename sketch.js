@@ -59,23 +59,6 @@ function draw()
     image(tree2,600,200,105,80);
   } 
 
-//fireB
-    if (!fireBTouched){
-        image(fireB,280 + Math.cos(timing1*2*PI)*65-30 , 320 + Math.sin(timing1*2*PI)*65-30, // y좌표
-        49,                                  // width
-        56);   
-    } else {
-    }
-
-
-    if (fireBTouched === false) {
-        if (dist(mouseX,mouseY,300,240+sin(timing*2*PI)*40)<50)   // 부딪혔을 때 
-        {
-            fireBTouched = true; 
-            fireBTouchedX = mouseX;
-            fireBTouchedY = mouseY;
-        } 
-    }
 
   image(cloud,0,0,800,500);
   image(fire1,260,240,55,86);
@@ -95,7 +78,28 @@ function draw()
   
   image(waterB,0,0,800,500);
 
+
+//fireB
+    if (!fireBTouched){
+        image(fireB,280 + Math.cos(timing1*2*PI)*65-30 , 320 + Math.sin(timing1*2*PI)*65-30, // y좌표
+        49,                                  // width
+        56);   
+    } else {
+    }
+
+
+    if (fireBTouched === false) {
+        if (dist(mouseX,mouseY,280,320+sin(timing*2*PI)*40)<50)   // 부딪혔을 때 
+        {
+            fireBTouched = true; 
+            fireBTouchedX = mouseX;
+            fireBTouchedY = mouseY;
+        } 
+    }
+
   image(mario, mouseX, mouseY, 44,53);
+
+
 
 }
 
