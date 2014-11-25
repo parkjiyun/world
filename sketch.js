@@ -74,7 +74,7 @@ function draw()
   image(wave,280+cos(t2*2*PI)*50,250,30,31);
 
   image(devil,500+sin(t1*2*PI)*50,120,34,40);
-  image(devil,500+sin(t1*2*PI)*50,120,34,40);
+  image(devil,250+sin(t1*2*PI)*50,170,34,40);
 
   //dicdac
   if(tDig <0.5){
